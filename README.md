@@ -51,13 +51,13 @@ Finally (optional enclosed part of code that will run after the try block or aft
 Demo handling errors: usnig two different exception. String and Boolean.
 Throwing (Try..Catch..Finally) exceptions
 ## Video 23 & 24
-- ) Dates: How dates work inside Javascript? Date is a central object that contains both date and time.
+-  Dates: How dates work inside Javascript? Date is a central object that contains both date and time.
 Time is an object. To create a date object:
 const now = new Date();
 Months starts with zero(january=0)
 setting values:
-### Demo: Setting values
-const now = new Date();
+Demo: Setting values
+### const now = new Date();
 now.setFullYear(2014); // sets year
 now.setMonth(3); // April (counting starts at zero)
 now.setDate(4); // sets day
