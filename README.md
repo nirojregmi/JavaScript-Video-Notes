@@ -58,7 +58,7 @@ Months starts with zero(january=0)
 setting values:
 Demo:
 Setting values
-```javascript
+```
 const now = new Date();
 now.setFullYear(2014); // sets year
 now.setMonth(3); // April (counting starts at zero)
@@ -67,6 +67,7 @@ now.setHours(4); // 24 hour clock
 now.setMinutes(24);
 now.setSeconds(46);
 console.log(now);
+```
 ## Video 25 & 26
 - ) Boolean logic with if statements:
 JavaScript supports the common operators
@@ -79,8 +80,8 @@ JavaScript has two comparison operators:
 •	=== checks for equal values and data types Example: '42' === 42 tests as false
 
 Not equal operator
-	!= checks for non-equality regardless of data type
-	!== checks for non-equal values and data types
+!= checks for non-equality regardless of data type
+	!== checks for non-equal values and data types
 Demo: String not equals to number. Learnt use case of using double equals and triple equals.(== or ===)
 ## Video 27 & 28
 - Boolean logic with switch and other syntax:
@@ -112,9 +113,11 @@ Use case of switch statement and if statement.
 	Array Length After an array is created, you can check its length at any time with arrayName.length
 Demo creating array:
 Array length and array object.
+```
 let arrayLength = 5;
 let arr1 = [];
 let arr2 = Array(arrayLength);
+```
 ## Video 31 & 32
 - populating arrays: Adding Data to an Array
 
@@ -122,11 +125,13 @@ During array creation You can create an array with data in one statement
 After array creation You can add data to an array after it's been created This method requires assigning the value to an index Indexes that may already have a value will be overwritten Keeping track of array's length is important if it has a fixed length.
 Demo:
 Adding data to an array: Learnt to add data to an array. Adding data during and after creation.
+```
 let arrayLength = 2;
 let arr2 = Array(arrayLength);
 arr2[0] = "Value at index 0";
 console.log(arr2[0]);
 console.log(arr2[1]); // No value present at index
+```
 ## Video 33 & 34
 - Array methods:
 Manipulating Arrays
@@ -142,6 +147,7 @@ Concat
 
 Demo:
 Push and Pop
+```
 let arr1 = ["A", true, 2];
 console.log(arr1.push("new value"));
 console.log(arr1);
@@ -160,6 +166,7 @@ let newArr = arr1.concat(arr2);
 let newArr2 = arr2.concat([1, 2, 3]);
 console.log(newArr);
 console.log(newArr2);
+```
 ## Video 35 & 36
 - loops:
 Loops in JavaScript
@@ -173,6 +180,7 @@ Common loop types
 	for ... of
 Demo:
 While loops
+```
 const names = ['Justin', 'Sarah', 'Christopher'];
 let index = 0;
 while (index < names.length) {
@@ -191,6 +199,7 @@ const names = ['Justin', 'Sarah', 'Christopher'];
 for (let name of names) {
   console.log(name);
 }
+```
 ## Video 37 & 38
 - Functions:
 It is the most powerful tool in the developer's toolbox. They allow you to take a block of code, put a name on it to make it clear what it does, and then call it as often as you need
@@ -214,12 +223,14 @@ Defined by =>
 	Reduction in characters typed
 
 Demo: Array functions in javascript
+```
 const add = (a, b) => a + b;
 console.log(add(1, 2)); // 3
 const subtract = (a, b) => {
   return a - b;
 };
 console.log(subtract(2, 1)); // 1
+```
 ## Video 41 & 42
 - Javascript object Notation (JSON)
 The flexibility of JavaScript allows us to create objects on the fly to suit your needs. One common way to do this is through JavaScript Object Notation or JSON - so common in fact it's become a common standard
@@ -230,6 +241,7 @@ The flexibility of JavaScript allows us to create objects on the fly to suit you
 	Deserialize JSON to Object
 
 Demo:
+```
 ###// JSON.stringify - object input
 console.log("\n ------- ")
 let bookJSON = JSON.stringify(book);
@@ -258,6 +270,7 @@ console.log(parsed);
 console.log(Array.isArray(parsed));
 console.log("Num items: " + parsed.length);
 console.log("Author of 2nd book: " + parsed[1].author);
+```
 ## Video 43 & 44
 - Objects in javascript
 JavaScript allows us to do more with objects than simply create data structures. We can create fully functional objects with methods and state. This allows us to better represent information and operations in your code.
@@ -269,6 +282,7 @@ JavaScript allows us to do more with objects than simply create data structures.
 	"this":
 
 Demo:
+```
 Defining simple object in java script:
 const blank = {};
 console.log("Blank type:", typeof blank);
@@ -282,12 +296,14 @@ const book = {
 
 console.log("Book type:", typeof book);
 console.log("Book value:\n", book);
+```
 ## Video 45 & 46
 - Promises for long running operations:
 Calls to databases and other external services can take a while. We need to ensure the application doesn't cease all operations while those complete. By using promises we can allow for better thread management and ensure our application stays responsive and has better performance.
 	Common development pattern Cleaner version of callbacks
 	Recent versions of JavaScript have built-in Promise object Long running operations typically return a Promise.
 Demo:
+```
 function promiseTimeout(ms) {
   return new Promise((resolve, reject) => {
     setTimeout(resolve, ms);
@@ -304,6 +320,7 @@ promiseTimeout(2000)
   .catch(() => {
     console.log('cool error handling');
   });
+```
 This example demonstrates how to create a Promise that resolves after a delay using setTimeout, then chains .then() blocks to handle the result and .catch() for error handling.
 ## Video 47 & 48
 - Async/Await: Make asynchronous code look synchronous
@@ -314,6 +331,7 @@ async/await
 	Syntax closer to synchronous code
 
 Demo:
+```
 function promiseTimeout(ms) {
     return new Promise((resolve, reject) => {
         setTimeout(resolve, ms);
@@ -327,6 +345,7 @@ async function run() {
     const answer = await simulateLongOperation();
     console.log(answer);
 }
+```
 This example shows how async/await simplifies asynchronous code. Instead of chaining .then(), it pauses execution with await, making the flow easier to read and maintain. 
 ## Video 49 & 50
 - Package management:
@@ -334,6 +353,7 @@ A package is a reusable bundle of code and/or assets like Libraries, Tools, Shar
 Applications frequently have the same set of core requirements. Rather than creating your own solutions, you can instead bring in packages created by others.
 
 Demo: 
+```
 {
   "name": "vsc-demo",
   "version": "1.0.0",
@@ -346,6 +366,7 @@ Demo:
   "author": "",
   "license": "ISC"
 }
+```
 Npm install –save-dev prettier. ”devDependencies” with package installed ”prettier” will appear.
 
 
