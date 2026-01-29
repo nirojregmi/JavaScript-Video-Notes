@@ -57,7 +57,7 @@ const now = new Date();
 Months starts with zero(january=0)
 setting values:
 Demo: Setting values
-### const now = new Date();
+###const now = new Date();
 now.setFullYear(2014); // sets year
 now.setMonth(3); // April (counting starts at zero)
 now.setDate(4); // sets day
