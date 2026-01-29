@@ -228,7 +228,7 @@ The flexibility of JavaScript allows us to create objects on the fly to suit you
 	Deserialize JSON to Object
 
 Demo:
-// JSON.stringify - object input
+###// JSON.stringify - object input
 console.log("\n ------- ")
 let bookJSON = JSON.stringify(book);
 console.log(typeof bookJSON);
