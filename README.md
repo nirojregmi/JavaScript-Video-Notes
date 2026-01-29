@@ -5,3 +5,5 @@ JavaScript is a programming language to interact with elements on a webpage in a
 - Java script on client-  a web browser put the file in a separate file with .js extension use same script tag but you gonna specify with a src attribute and point it to the script file called source file
 To run java script on a server side we need to use node.js. we have to install node.js on the server side and execute by calling node and the script file directly from the command line. Repository of third party packages called npm which contains package of anything we can think of.
 Webbrower uses script tags primarily used for building user interfaces  and server uses node.js to be installed and is usually used for buildingweb services.
+## Learnt to install vsc and node.js in video 4 and 5
+
